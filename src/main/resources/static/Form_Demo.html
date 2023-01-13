@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>http中 POST方法用於代表資料上傳</div>
+        <h3>如果表只是用來查詢行為 應指定為Get</h3>
+        <form method="Get" action="http://192.168.255.123:8867/api/phone/search">
+            容量：<input name="q" id="q" type="text"/>
+            顏色：<input name="color" id="color" type="text"/>
+            <input type="submit" value="查詢"/>
+        </form>
+        <div>TODO write content</div>
+        <h3>如果表單只是用來傳送資料並進行新增行為 應指定為Post</h3>
+        <h2>使用者註冊</h2>
+        <form method="Post" action="http://192.168.255.123:8867/api/phone/reg">
+            姓名：<input name="name" id="name" type="text"/><br/>
+            電話：<input name="mobile" id="mobile" type="text"/><br/>
+            電子郵件：<input name="mail" id="mail" type="text"/><br/>
+            密碼：<input name="pwd" id="pwd" type="password"/><br/>
+            <input type="submit" value="註冊"/>
+        </form>
+    </body>
+</html>
